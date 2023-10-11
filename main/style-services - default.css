@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background: url('cbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  height: auto;
+}
+
+header{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.logo{
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+}
+.logo img{
+  width: 200px;
+}
+
+nav{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  background: #069370;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.container h1{
+  text-align: center;
+  color: black;
+}
+.block{
+  float: left;
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.block img{
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: solid black;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}

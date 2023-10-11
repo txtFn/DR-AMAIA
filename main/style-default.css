@@ -1,0 +1,260 @@
+@@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: 'Poppins', sans-serif;
+  height: auto;
+}
+header{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+footer{
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin-top: 10%;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  bottom: 0;
+}
+footer .container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+}
+
+footer .container .sec{
+  margin-right: 30px;
+  width: 40%;
+}
+footer .container .sec h2{
+  position: absolute;
+  top: 0;
+  left: 50px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+footer .container h2:before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+footer p{
+  margin-top: 40px;
+  margin-left: 30px;
+  color: #999;
+  font-size: 0.7em;
+}
+.sci{
+  display: flex;
+  margin-top: 2%;
+  margin-left: 30%;
+  float:left;
+  box-sizing: border-box;
+}
+.sci li{
+  list-style: none;
+}
+.sci li a{
+  display: block;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.sci li a:hover{
+  background: #f00;
+}
+
+.con{
+  position: relative;
+  display: flex;
+  margin-top: 1%;
+  width: 100%;
+  height: auto;
+  background: grey;
+}
+.con img{
+  position: absolute;
+  height: 500px;
+  bottom: 0;
+  left: -7%;
+}
+.con p{
+  position: relative;
+  margin-left:25%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.logo{
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+}
+.logo img{
+  width: 200px;
+}
+nav{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  background: #069370;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.slider{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.slides{
+  width: 500%;
+  height: auto;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 20%;
+  transition: 1s;
+}
+.slide img{
+  width: 100%;
+  height: auto;
+}
+.navigation-manual{
+  visibility: hidden;
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid #0000;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: auto;
+  transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background: #28A457;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: -80%;
+}
+
+.navigation-auto{
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 460px;
+  position: absolute;
+  width: 800px;
+
+}
+
+.navigation-auto div{
+border: 2px solid #28A457;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #28A457;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #28A457;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #28A457;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #28A457;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background: #28A457;
+}

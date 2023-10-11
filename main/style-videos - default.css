@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background: url('cbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  height: auto;
+}
+
+header{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.logo{
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+}
+.logo img{
+  width: 200px;
+}
+
+nav{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  background: #069370;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.vids{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.about h1{
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.block{
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left;
+  width: 33.3%;
+  height: 400px;
+}
+.block video{
+  border: solid green;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
