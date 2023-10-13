@@ -2,43 +2,57 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #fff; /* fallback for old browsers */
+  background: #fff;
+
+  /* fallback for old browsers */
 }
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-i{
+
+i {
   margin-right: 10px;
 }
-.navbar-logo{
+
+.navbar-logo {
   padding: 15px;
   color: #fff;
 }
-.navbar-logo img{
+
+.navbar-logo img {
   width: 150px;
   height: 50px;
 }
-.navbar-mainbg{
+
+.navbar-mainbg {
   background-color: #000000;
   padding: 0px;
 }
-#navbarSupportedContent{
+
+#navbarSupportedContent {
   overflow: hidden;
   position: relative;
 }
-#navbarSupportedContent ul{
+
+#navbarSupportedContent ul {
   padding: 0px;
   margin: 0px;
 }
-#navbarSupportedContent ul li a i{
+
+#navbarSupportedContent ul li a i {
   margin-right: 10px;
 }
-#navbarSupportedContent li{
+
+#navbarSupportedContent li {
   list-style-type: none;
   float: left;
 }
-#navbarSupportedContent ul li a{
+
+#navbarSupportedContent ul li a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   font-size: 15px;
@@ -48,13 +62,14 @@ i{
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   position: relative;
 }
-#navbarSupportedContent > ul > li.active > a
-{
+
+#navbarSupportedContent>ul>li.active>a {
   color: #000000;
   background-color: transparent;
   transition: all 0.7s;
 }
-#navbarSupportedContent a:not(:only-child):after{
+
+#navbarSupportedContent a:not(:only-child):after {
   content: 'f105';
   position: absolute;
   right: 20px;
@@ -67,10 +82,12 @@ i{
   font-weight: 900;
   transition: 0.5s;
 }
-#navbarSupportedContent .active > a:not(:only-child):after{
+
+#navbarSupportedContent .active>a:not(:only-child):after {
   transform: rotate(90deg);
 }
-.hori-selector{
+
+.hori-selector {
   display: inline-block;
   position: absolute;
   height: 100%;
@@ -83,22 +100,26 @@ i{
   border-top-right-radius: 15px;
   margin-top: 10px;
 }
+
 .hori-selector .right,
-.hori-selector .left{
+.hori-selector .left {
   position: absolute;
   width: 25px;
   height: 25px;
   background-color: #fff;
   bottom: 10px;
 }
-.hori-selector .right{
+
+.hori-selector .right {
   right: -25px;
 }
-.hori-selector .left{
+
+.hori-selector .left {
   left: -25px;
 }
+
 .hori-selector .right:before,
-.hori-selector .left:before{
+.hori-selector .left:before {
   content: '';
   position: absolute;
   width: 50px;
@@ -106,85 +127,102 @@ i{
   border-radius: 50%;
   background-color: #000000;
 }
-.hori-selector .right:before{
+
+.hori-selector .right:before {
   bottom: 0;
   right: -25px;
 }
-.hori-selector .left:before{
+
+.hori-selector .left:before {
   bottom: 0;
   left: -25px;
 }
+
 @media (max-width: 991px) {
-  #navbarSupportedContent ul li a{
+  #navbarSupportedContent ul li a {
     padding: 12px 30px;
   }
-  .hori-selector{
+
+  .hori-selector {
     margin-top: 0px;
     margin-left: 10px;
     border-radius: 0;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
   }
+
   .hori-selector .left,
-  .hori-selector .right{
+  .hori-selector .right {
     right: 10px;
   }
-  .hori-selector .left{
+
+  .hori-selector .left {
     top: -25px;
     left: auto;
   }
-  .hori-selector .right{
+
+  .hori-selector .right {
     bottom: -25px;
   }
-  .hori-selector .left:before{
+
+  .hori-selector .left:before {
     left: -25px;
     top: -25px;
   }
-  .hori-selector .right:before{
+
+  .hori-selector .right:before {
     bottom: -25px;
     left: -25px;
   }
 }
 
-.text{
+.text {
   color: #456389;
 }
-.container{
+
+.container {
   margin: auto;
   padding: auto;
-  width: auto;
+  width: 100%;
   height: auto;
 }
-.container h1{
+
+.container h1 {
   text-align: center;
   margin-top: 50px;
 }
-.slider{
+
+.slider {
   margin: auto;
   padding: auto;
   width: 100%;
   height: auto;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
-.slides{
+
+.slides {
   width: 500%;
   height: auto;
   display: flex;
 }
-.slides input{
+
+.slides input {
   display: none;
 }
-.slide{
+
+.slide {
   width: 20%;
   transition: 1s;
 }
-.slide img{
+
+.slide img {
   width: 100%;
   height: auto;
 }
-.navigation-manual{
+
+.navigation-manual {
   visibility: hidden;
   position: absolute;
   width: 800px;
@@ -192,37 +230,44 @@ i{
   display: flex;
   justify-content: center;
 }
-.manual-btn{
+
+.manual-btn {
   border: 2px solid #0000;
   padding: 5px;
   border-radius: 10px;
   cursor: auto;
   transition: 0.5s;
 }
-.manual-btn:not(:last-child){
+
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
-.manual-btn:hover{
+
+.manual-btn:hover {
   background: #28A457;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
   margin-left: 0;
 }
-#radio2:checked ~ .first{
+
+#radio2:checked~.first {
   margin-left: -20%;
 }
-#radio3:checked ~ .first{
+
+#radio3:checked~.first {
   margin-left: -40%;
 }
-#radio4:checked ~ .first{
+
+#radio4:checked~.first {
   margin-left: -60%;
 }
-#radio5:checked ~ .first{
+
+#radio5:checked~.first {
   margin-left: -80%;
 }
 
-.navigation-auto{
+.navigation-auto {
   visibility: hidden;
   display: flex;
   justify-content: center;
@@ -232,34 +277,38 @@ i{
 
 }
 
-.navigation-auto div{
-border: 2px solid #28A457;
-padding: 5px;
-border-radius: 10px;
-transition: 1s;
+.navigation-auto div {
+  border: 2px solid #28A457;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
-margin-right: 40px;
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #28A457;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #28A457;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #28A457;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #28A457;
-}
-#radio5:checked ~ .navigation-auto .auto-btn5{
+#radio1:checked~.navigation-auto .auto-btn1 {
   background: #28A457;
 }
 
-footer{
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: #28A457;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: #28A457;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: #28A457;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+  background: #28A457;
+}
+
+footer {
   height: auto;
   width: 100%;
   padding: 0;
@@ -270,7 +319,8 @@ footer{
   flex-wrap: wrap;
   bottom: 0;
 }
-footer .con{
+
+footer .con {
   position: relative;
   width: 100%;
   height: auto;
@@ -281,19 +331,21 @@ footer .con{
   padding: 20px;
 }
 
-footer .con .sec{
+footer .con .sec {
   position: relative;
   margin-right: 30px;
   width: 40%;
 }
-footer .con .sec h2{
+
+footer .con .sec h2 {
   position: relative;
   top: 0;
   left: 30px;
   color: #fff;
   font-weight: 500;
 }
-footer .con h2:before{
+
+footer .con h2:before {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -302,25 +354,29 @@ footer .con h2:before{
   height: 2px;
   background: #f00;
 }
-footer p{
+
+footer p {
   position: relative;
   margin-top: 20px;
   margin-left: 30px;
   color: #999;
   font-size: 0.7em;
 }
-.sci{
+
+.sci {
   position: relative;
   display: flex;
   margin-top: 2%;
   margin-left: 30%;
-  float:left;
+  float: left;
   box-sizing: border-box;
 }
-.sci li{
+
+.sci li {
   list-style: none;
 }
-.sci li a{
+
+.sci li a {
   position: relative;
   display: block;
   margin-top: 30px;
@@ -334,11 +390,13 @@ footer p{
   text-decoration: none;
   border-radius: 4px;
 }
-.sci li a:hover{
+
+.sci li a:hover {
   background: #f00;
 }
-@media (max-width: 991px){
-  footer{
+
+@media (max-width: 991px) {
+  footer {
     position: relative;
     height: 100%;
     width: 100%;
@@ -349,35 +407,40 @@ footer p{
     flex-wrap: wrap;
     margin-top: 70%;
   }
-  footer .con .sec h2{
+
+  footer .con .sec h2 {
     position: relative;
     top: 0;
     left: 30px;
     color: #fff;
     font-weight: 500;
   }
-  footer .con .sec{
+
+  footer .con .sec {
     position: relative;
     margin-right: 30px;
     width: 100%;
     margin: auto;
     padding: auto;
   }
-  footer p{
+
+  footer p {
     position: relative;
     color: #999;
     font-size: 0.7em;
   }
-  .sec h2{
+
+  .sec h2 {
     margin: auto;
     padding: auto;
   }
-  .sci{
+
+  .sci {
     position: relative;
     display: flex;
     margin: auto;
     padding: auto;
-    float:left;
+    float: left;
     box-sizing: border-box;
   }
 }

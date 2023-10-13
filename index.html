@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DR-Knights</title>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <!-- Style.css -->
-  <link rel="stylesheet" href="Main/style.css">
+  <link rel="stylesheet" href="main/style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/455338289c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-mainbg">
     <!-- Logo -->
     <a class="navbar-brand navbar-logo" href="index.html"><img src="Main/logo.jpg"></a>
     <!-- Collapse Button -->
-    <button type="button" class="navbar-toggler"
-    data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars text-white"></i>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white"></i>
     </button>
     <!-- Links -->
-    <div class="collapse navbar-collapse"
-    id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <!-- For Styling -->
-      <div class="hori-selector">
-        <div class="left"></div>
-        <div class="right"></div>
-      </div>
-      <!-- Nav Links -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-        <i></i>Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Main/about.html">
-        <i class="far fa-copy"></i>About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Main/services.html">
-        <i class="far fa-clone"></i>Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Main/videos.html">
-        <i class="fa fa-play"></i>Videos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Main/contact.html">
-        <i class="far fa-address-book"></i>Contact Us</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <!-- For Styling -->
+        <div class="hori-selector">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <!-- Nav Links -->
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="main/about.html">
+            <i class="far fa-copy"></i>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="main/services.html">
+            <i class="far fa-clone"></i>Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="main/videos.html">
+            <i class="fa fa-play"></i>Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="main/contact.html">
+            <i class="far fa-address-book"></i>Contact Us</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -98,81 +97,94 @@
         </div>
       </div>
 
-    <div class="navigation-auto">
-      <div class="auto-btn1"></div>
-      <div class="auto-btn2"></div>
-      <div class="auto-btn3"></div>
-      <div class="auto-btn4"></div>
-      <div class="auto-btn5"></div>
-        </div>
+      <!-- <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+      </div>
       <div class="navigation-manual">
         <label for="radio1" class="manual-btn"></label>
         <label for="radio2" class="manual-btn"></label>
         <label for="radio3" class="manual-btn"></label>
         <label for="radio4" class="manual-btn"></label>
         <label for="radio5" class="manual-btn"></label>
-      </div>
+      </div> -->
 
-    <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if(counter > 4){
-      counter = 1;
-    }
-    }, 5000);
-    </script>
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if (counter > 4) {
+            counter = 1;
+          }
+        }, 2500);
+      </script>
 
-            <h1 class="mb-4 font-weight-bold align-center">
-              Welcome to <span class="text">My Website!</span>
-            </h1>
-            <p class="mb-4 pb-5">
-              I'm Engr. Ramon Delos Reyes a
-              conscientious real estate salesperson who exudes credibility,
-              commitment and determination. My passion for real estate is apparent
-              through my excellent communication skills and a warm and friendly
-              approach. My mechanical engineering experience and property
-              specialization translate to helping hundreds of client. I recognized
-              and valued the trust of my client place in me and I strive everyday
-              to exceed their expectation.
-            </p>
-          <div>
-            <a href="Main/contact.html" class="text-center btn btn-outline-dark
+      <h1 class="mb-4 font-weight-bold align-center">
+        Welcome to <span class="text">My Website!</span>
+      </h1>
+      <p class="mb-4 pb-5">
+        I'm Engr. Ramon Delos Reyes a
+        conscientious real estate salesperson who exudes credibility,
+        commitment and determination. My passion for real estate is apparent
+        through my excellent communication skills and a warm and friendly
+        approach. My mechanical engineering experience and property
+        specialization translate to helping hundreds of client. I recognized
+        and valued the trust of my client place in me and I strive everyday
+        to exceed their expectation.
+      </p>
+      <div>
+        <a href="Main/contact.html" class="text-center btn btn-outline-dark
             btn-lg btn-block">Contact Us</a>
-          </div>
-        </div>
+      </div>
+    </div>
   </header>
 
   <footer>
     <div class="con">
       <div class="sec">
         <h2>About Amaia</h2>
-          <p>
-            <strong>
-              Amaia promises to bring the spirit and quality of an A-development to
-              more people. Originally named First Communities Realty, Inc. under the
-              former Laguna Properties Holdings Inc. (LPHI), Amaia focuses on the
-              affordable market segment, which makes up 34% of the Philippine real
-              estate market.
-            </strong>
-          </p>
+        <p>
+          <strong>
+            Amaia promises to bring the spirit and quality of an A-development to
+            more people. Originally named First Communities Realty, Inc. under the
+            former Laguna Properties Holdings Inc. (LPHI), Amaia focuses on the
+            affordable market segment, which makes up 34% of the Philippine real
+            estate market.
+          </strong>
+        </p>
       </div>
-          <ul class="sci">
-            <li><a href="https://www.facebook.com/ramon.delosreyes.526" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/ramon.delosreyes.526/?fbclid=IwAR3ncSjMyRR9TJQIFw7NaLtd5bj11ZBaUnap0x-HsK_4Zpznn5aXol0eNPo" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UChQniv0NJJUHBms5ntJgoBg/featured" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/RamonMendozaDe1?s=07&fbclid=IwAR14q6U6erE4xctniXTsXBoXdo_FZzrjFzQ6cv3lTHbdesDxOGVlfNWFr0Y" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=639950215407&text=Hello%2C%20I%20want%20more%20preview%20about%20Amaia" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-          </ul>
-          <div class="clearfix"></div>
-          </div>
+      <ul class="sci">
+        <li><a href="https://www.facebook.com/ramon.delosreyes.526" target="_blank"><i class="fa fa-facebook"
+              aria-hidden="true"></i></a></li>
+        <li><a
+            href="https://www.instagram.com/ramon.delosreyes.526/?fbclid=IwAR3ncSjMyRR9TJQIFw7NaLtd5bj11ZBaUnap0x-HsK_4Zpznn5aXol0eNPo"
+            target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UChQniv0NJJUHBms5ntJgoBg/featured" target="_blank"><i
+              class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        <li><a
+            href="https://twitter.com/RamonMendozaDe1?s=07&fbclid=IwAR14q6U6erE4xctniXTsXBoXdo_FZzrjFzQ6cv3lTHbdesDxOGVlfNWFr0Y"
+            target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a
+            href="https://api.whatsapp.com/send?phone=639950215407&text=Hello%2C%20I%20want%20more%20preview%20about%20Amaia"
+            target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
   <!-- Custom Script -->
-  <script src="Main/script.js"></script>
+  <script src="main/script.js"></script>
 </body>
+
 </html>
