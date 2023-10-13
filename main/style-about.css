@@ -197,8 +197,9 @@ i {
   width: 25%;
   height: auto;
   box-sizing: border-box;
-  /* padding: 20px; */
+  padding: 20px;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .slot img {
@@ -226,6 +227,7 @@ i {
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 0;
   }
 
   .slot img {
